@@ -13,6 +13,20 @@ class ProductDetails extends StatelessWidget {
       body: ProductBody(
         product: product,
       ),
+
+      floatingActionButton : Container(
+        height: 65.0,
+        width: 65.0,
+        child: FittedBox(
+          child: FloatingActionButton(
+              elevation: 10.0,
+              child: new Icon(Icons.add_shopping_cart,color: Colors.yellow.withOpacity(0.8),),
+              backgroundColor: Color(0xFF0A1236),
+              onPressed: (){}
+          ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
